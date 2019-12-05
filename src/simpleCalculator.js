@@ -6,9 +6,8 @@ import {
   Button,
   StyleSheet
 } from "react-native";
-import Icon from 'react-native-vector-icons/Ionicons';
 
-const App = (props) => {
+const simpleCalculator = (props) => {
   
   const [enterValue, setEnteredValue] = useState('');
   const [enterValue2, setEnteredValue2] = useState('');
@@ -57,9 +56,6 @@ const App = (props) => {
           value={enterValue2}
         />
       </View>
-      <Text>
-        Lorem <Icon name="ios-book" color="red" size={30}/> Ipsum
-    </Text>
       <Button
         title="SUBMIT"
         onPress={onSubmitValue}
@@ -101,4 +97,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default App;
+export default simpleCalculator;
