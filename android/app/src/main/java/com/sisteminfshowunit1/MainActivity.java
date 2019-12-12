@@ -2,6 +2,11 @@ package com.sisteminfshowunit1;
 
 import com.facebook.react.ReactActivity;
 
+//from react-native-gedture-handler when install react navigation
+import com.facebook.react.ReactActivityDelegate;
+import com.facebook.react.ReactRootView;
+import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+
 public class MainActivity extends ReactActivity {
 
   /**
@@ -12,4 +17,18 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "SistemInfShowUnit1";
   }
+
+
+  // from react-native gesture-handler when install react-navigatiion
+  @Override
+  protected ReactActivityDelegate createReactActivityDelegate() {
+    return new ReactActivityDelegate(this, getMainComponentName()) {
+      @Override
+      protected ReactRootView createRootView() {
+       return new RNGestureHandlerEnabledRootView(MainActivity.this);
+      }
+    };
+  }
+
+
 }
