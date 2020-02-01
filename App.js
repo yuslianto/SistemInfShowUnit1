@@ -5,11 +5,11 @@ import {
   StyleSheet
 } from "react-native";
 
-import CategoryGridTitle from './src/CategoryGridTitle';
+import CategoriesScreen from './src/Pages/CategoriesScreen/CategoriesScreen';
 
 const App = (props) => {
   return (
-    <CategoryGridTitle/>
+    <CategoriesScreen/>
   );
 };
 

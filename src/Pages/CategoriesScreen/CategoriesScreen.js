@@ -5,10 +5,13 @@ import {
     StyleSheet
 } from "react-native";
 
-const CategoryGridTitle = (props) => {
+import CategoryGridTitle from "../../Molekul/CategoryGridTitle/CategoryGridTitle";
+
+const CategoriesScreen = (props) => {
     return (
         <View style={styles.container}>
             <Text>Title</Text>
+            <CategoryGridTitle/>
         </View>
     );
 };
@@ -21,4 +24,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default CategoryGridTitle;
+export default CategoriesScreen;
