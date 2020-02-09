@@ -17,7 +17,7 @@ const CategoryGridTitle = (props) => {
                 <View
                     style={styles.container}
                 >
-                    <Text style={styles.title}>Category Grid Title</Text>
+                    <Text style={styles.title}>Category Grid Title Test 1</Text>
                 </View>
             </TouchableOpacity>
         </View>
