@@ -5,17 +5,20 @@ import {
   StyleSheet
 } from "react-native";
 
-import CategoriesScreen from './src/Pages/CategoriesScreen/CategoriesScreen';
-import AuthScreen from './src/Pages/AuthScreen/AuthScreen';
+import AppContainer from './src/Template/navigation/NavigatorApp';
 
 const App = (props) => {
   return (
-    //<CategoriesScreen/>
-    <AuthScreen/>
+    <AppContainer/>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
 });
 
 export default App;
